@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Shared/3TB4_labs/lab5/simulation/modelsim
+vbranch_logic
+!s110 1681273003
+!i10b 1
+!s100 g50o]dEZP7IS7U`f8H=H=1
+Ic]F49i7CiYSkV[gzM[HDj3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1681272696
+8C:/Shared/3TB4_labs/lab5/branch_logic.v
+FC:/Shared/3TB4_labs/lab5/branch_logic.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1681273003.000000
+!s107 C:/Shared/3TB4_labs/lab5/branch_logic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Shared/3TB4_labs/lab5|C:/Shared/3TB4_labs/lab5/branch_logic.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5
+tCvgOpt 0

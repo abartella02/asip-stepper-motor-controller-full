@@ -1,0 +1,25 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/write_address_select.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/temp_register.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/result_mux.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/regfile.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/pc.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/op2_mux.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/op1_mux.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/lab5.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/immediate_extractor.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/delay_counter.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/decoder.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/datapath.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/control_fsm.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/branch_logic.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/alu.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/instruction_rom.v}
+vlog -vlog01compat -work work +incdir+C:/Shared/3TB4_labs/lab5 {C:/Shared/3TB4_labs/lab5/stepper_rom.v}
+

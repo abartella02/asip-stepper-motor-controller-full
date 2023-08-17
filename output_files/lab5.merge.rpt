@@ -1,0 +1,548 @@
+Partition Merge report for lab5
+Tue Apr 11 18:53:18 2023
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Partition Pin Processing
+  7. Partition Merge Resource Usage Summary
+  8. Partition Merge RAM Summary
+  9. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Partition Merge Summary                                                       ;
++---------------------------------+---------------------------------------------+
+; Partition Merge Status          ; Successful - Tue Apr 11 18:53:17 2023       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; lab5                                        ;
+; Top-level Entity Name           ; lab5                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 1751                                        ;
+; Total pins                      ; 16                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 15,624                                      ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Source File            ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                                                                    ;
++----------------------------------------------------------------+--------------+-----------+--------------------------------+-------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------+
+; Name                                                           ; Type         ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                                     ; Details                                                                                  ;
++----------------------------------------------------------------+--------------+-----------+--------------------------------+-------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------+
+; CLOCK_50                                                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; CLOCK_50                                              ; N/A                                                                                      ;
+; CLOCK_50~inputCLKENA0                                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; CLOCK_50                                              ; N/A                                                                                      ;
+; CLOCK_50~inputCLKENA0                                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; CLOCK_50                                              ; N/A                                                                                      ;
+; KEY[0]~input                                                   ; post-fitting ; connected ; Top                            ; post-synthesis    ; KEY[0]                                                ; N/A                                                                                      ;
+; KEY[0]~input                                                   ; post-fitting ; connected ; Top                            ; post-synthesis    ; KEY[0]                                                ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|gnd                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; auto_signaltap_0|vcc                                           ; post-fitting ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector10~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector10~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector11~0                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector11~0              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector11~0                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector11~0              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector18~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector18~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector20~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector20~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector25~0                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector25~0              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector25~0                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector25~0              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector26~0                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector26~0              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector26~0                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector26~0              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector26~1                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector26~1                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector32~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector32~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector36~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector36~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector36~1                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector36~1                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector36~2                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector36~2                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector38~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector38~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector3~0                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector3~0               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector3~0                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector3~0               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector40~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector40~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector42~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector42~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector44~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector44~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector46~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector46~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector50~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector50~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector50~1                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector50~1                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector50~2                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector50~2                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector51~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector51~0                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|Selector5~0                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector5~0               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|Selector5~0                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|Selector5~0               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|WideNor0~0                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|WideNor0~0                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|WideNor0~0                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|WideNor0~0                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|WideOr13~0                         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|WideOr13~0                         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|WideOr18                           ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|WideOr18                           ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|WideOr29~0                         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|WideOr29~0                         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|alu_add_sub                        ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|alu_add_sub                        ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|alu_set_high                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|alu_set_high                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|alu_set_low                        ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|alu_set_low                        ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|comb~0                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~0                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~0                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~0                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~1                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~1                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~1                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~1                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~10                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~10                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~10                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~10                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~11                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~11                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~11                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~11                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~12                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~12                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~12                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~12                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~13                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~13                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~13                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~13                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~14                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~14                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~14                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~14                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~15                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~15                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~15                            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~15                   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~2                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~2                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~2                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~2                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~3                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~3                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~3                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~3                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~4                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~4                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~4                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~4                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~5                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~5                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~5                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~5                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~6                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~6                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~6                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~6                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~7                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~7                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~7                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~7                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~8                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~8                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~8                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~8                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~9                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~9                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|comb~9                             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|comb~9                    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|commit_branch                      ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|commit_branch                      ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|decrement_temp_register            ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|decrement_temp_register            ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|enable_delay_counter               ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|enable_delay_counter      ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|enable_delay_counter               ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|enable_delay_counter      ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|enable_delay_counter~0             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|enable_delay_counter~0    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|enable_delay_counter~0             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|enable_delay_counter~0    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|increment_pc                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|increment_pc                       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|increment_temp_register            ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|increment_temp_register            ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|load_temp_register                 ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|load_temp_register                 ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|load_temp_register~0               ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|load_temp_register~0               ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.ADDI_1243         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.ADDI_1243         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.ADDI~0            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.ADDI~0   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.ADDI~0            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.ADDI~0   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.ADDI~1            ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.ADDI~1            ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.BRZ_1269          ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.BRZ_1269          ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.BRZ~0             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.BRZ~0    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.BRZ~0             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.BRZ~0    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.BR_1295           ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.BR_1295           ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.BR~0              ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.BR~0     ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.BR~0              ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.BR~0     ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.CLR_1139          ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.CLR_1139          ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.CLR~0             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.CLR~0    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.CLR~0             ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.CLR~0    ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.DECODE_1324       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.DECODE_1324       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.FETCH_1353        ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.FETCH_1353        ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS_1061       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS_1061       ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS_DELAY_922  ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS_DELAY_922  ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS_STAGE2_951 ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS_STAGE2_951 ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS~0          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.MOVRHS~0 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS~0          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.MOVRHS~0 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS~1          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.MOVRHS~1 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.MOVRHS~1          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.MOVRHS~1 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.MOVR_1087         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVR_1087         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVR_DELAY_980    ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVR_DELAY_980    ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVR_STAGE2_1009  ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVR_STAGE2_1009  ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOVR~0            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.MOVR~0   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.MOVR~0            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.MOVR~0   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.MOV_1113          ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.MOV_1113          ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.PAUSE_1035        ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.PAUSE_1035        ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.PAUSE_DELAY_893   ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.PAUSE_DELAY_893   ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.SR0_1191          ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.SR0_1191          ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.SRH0_1165         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.SRH0_1165         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.SUBI_1217         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.SUBI_1217         ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|next_state_logic.SUBI~0            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.SUBI~0   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|next_state_logic.SUBI~0            ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|next_state_logic.SUBI~0   ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|result_mux_select                  ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|result_mux_select                  ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|start_delay_counter                ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|start_delay_counter                ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|state.ADDI                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.ADDI                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.ADDI                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.ADDI                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.BR                           ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.BR                  ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.BR                           ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.BR                  ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.BRZ                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.BRZ                 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.BRZ                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.BRZ                 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.CLR                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.CLR                 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.CLR                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.CLR                 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.DECODE                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.DECODE              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.DECODE                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.DECODE              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.FETCH                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.FETCH               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.FETCH                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.FETCH               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOV                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOV                 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOV                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOV                 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVR                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVR                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVR                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVR                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVRHS                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVRHS              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVRHS                       ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVRHS              ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVRHS_DELAY                 ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVRHS_DELAY        ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVRHS_DELAY                 ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVRHS_DELAY        ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVRHS_STAGE2                ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVRHS_STAGE2       ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVRHS_STAGE2                ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVRHS_STAGE2       ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVR_DELAY                   ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVR_DELAY          ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVR_DELAY                   ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVR_DELAY          ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVR_STAGE2                  ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVR_STAGE2         ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.MOVR_STAGE2                  ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.MOVR_STAGE2         ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.PAUSE                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.PAUSE               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.PAUSE                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.PAUSE               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.PAUSE_DELAY                  ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.PAUSE_DELAY         ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.PAUSE_DELAY                  ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.PAUSE_DELAY         ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.RESET                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.RESET               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.RESET                        ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.RESET               ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.RESET~feeder                 ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|state.RESET~feeder                 ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|state.SR0                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.SR0                 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.SR0                          ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.SR0                 ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.SRH0                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.SRH0                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.SRH0                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.SRH0                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.SUBI                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.SUBI                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.SUBI                         ; post-fitting ; connected ; Top                            ; post-synthesis    ; control_fsm:the_control_fsm|state.SUBI                ; N/A                                                                                      ;
+; control_fsm:the_control_fsm|state.SUBI~feeder                  ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|state.SUBI~feeder                  ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|write_reg_file                     ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
+; control_fsm:the_control_fsm|write_reg_file                     ; post-fitting ; missing   ; Top                            ; post-synthesis    ; GND                                                   ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
++----------------------------------------------------------------+--------------+-----------+--------------------------------+-------------------+-------------------------------------------------------+------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                    ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top  ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 143  ; 63               ; 778                            ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Combinational ALUT usage for logic          ; 271  ; 93               ; 337                            ; 0                              ;
+;     -- 7 input functions                    ; 0    ; 0                ; 0                              ; 0                              ;
+;     -- 6 input functions                    ; 46   ; 14               ; 78                             ; 0                              ;
+;     -- 5 input functions                    ; 40   ; 22               ; 129                            ; 0                              ;
+;     -- 4 input functions                    ; 33   ; 20               ; 24                             ; 0                              ;
+;     -- <=3 input functions                  ; 152  ; 37               ; 106                            ; 0                              ;
+; Memory ALUT usage                           ; 0    ; 0                ; 0                              ; 0                              ;
+;     -- 64-address deep                      ; 0    ; 0                ; 0                              ; 0                              ;
+;     -- 32-address deep                      ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Dedicated logic registers                   ; 114  ; 91               ; 1546                           ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+;                                             ;      ;                  ;                                ;                                ;
+; I/O pins                                    ; 16   ; 0                ; 0                              ; 0                              ;
+; I/O registers                               ; 0    ; 0                ; 0                              ; 0                              ;
+; Total block memory bits                     ; 2056 ; 0                ; 13568                          ; 0                              ;
+; Total block memory implementation bits      ; 0    ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 0    ; 0                ; 0                              ; 1                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Connections                                 ;      ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 0    ; 134              ; 2324                           ; 1                              ;
+;     -- Registered Input Connections         ; 0    ; 110              ; 1777                           ; 0                              ;
+;     -- Output Connections                   ; 1266 ; 327              ; 34                             ; 832                            ;
+;     -- Registered Output Connections        ; 38   ; 327              ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Internal Connections                        ;      ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 2684 ; 984              ; 8164                           ; 841                            ;
+;     -- Registered Connections               ; 398  ; 805              ; 6238                           ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; External Connections                        ;      ;                  ;                                ;                                ;
+;     -- Top                                  ; 0    ; 0                ; 1266                           ; 0                              ;
+;     -- sld_hub:auto_hub                     ; 0    ; 20               ; 318                            ; 123                            ;
+;     -- sld_signaltap:auto_signaltap_0       ; 1266 ; 318              ; 64                             ; 710                            ;
+;     -- hard_block:auto_generated_inst       ; 0    ; 123              ; 710                            ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Partition Interface                         ;      ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 5    ; 45               ; 387                            ; 4                              ;
+;     -- Output Ports                         ; 15   ; 62               ; 227                            ; 9                              ;
+;     -- Bidir Ports                          ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Registered Ports                            ;      ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0    ; 13               ; 217                            ; 0                              ;
+;     -- Registered Output Ports              ; 0    ; 29               ; 213                            ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Port Connectivity                           ;      ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0    ; 0                ; 122                            ; 0                              ;
+;     -- Output Ports driven by GND           ; 0    ; 28               ; 2                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0    ; 0                ; 16                             ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0    ; 0                ; 1                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0    ; 25               ; 110                            ; 0                              ;
+;     -- Output Ports with no Source          ; 0    ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0    ; 30               ; 124                            ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0    ; 29               ; 215                            ; 0                              ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                               ;
++-----------------------------------+-----------+---------------+----------+-------------+
+; Name                              ; Partition ; Type          ; Location ; Status      ;
++-----------------------------------+-----------+---------------+----------+-------------+
+; CLOCK_50                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- CLOCK_50                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- CLOCK_50~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; GPIO_0[0]                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- GPIO_0[0]                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- GPIO_0[0]~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; GPIO_0[1]                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- GPIO_0[1]                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- GPIO_0[1]~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; GPIO_0[2]                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- GPIO_0[2]                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- GPIO_0[2]~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; GPIO_0[3]                         ; Top       ; Output Port   ; n/a      ;             ;
+;     -- GPIO_0[3]                  ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- GPIO_0[3]~output           ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; KEY[0]                            ; Top       ; Input Port    ; n/a      ;             ;
+;     -- KEY[0]                     ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[0]~input               ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[0]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[0]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[0]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[1]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[1]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[1]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[2]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[2]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[2]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[3]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[3]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[3]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[4]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[4]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[4]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[5]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[5]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[5]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[6]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[6]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[6]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[7]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[7]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[7]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[8]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[8]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[8]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; LEDR[9]                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- LEDR[9]                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- LEDR[9]~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tck               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tck        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tck~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tdi               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tdi        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdi~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tdo               ; Top       ; Output Port   ; n/a      ;             ;
+;     -- altera_reserved_tdo        ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdo~output ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tms               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tms        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tms~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
++-----------------------------------+-----------+---------------+----------+-------------+
+
+
++--------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                       ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 966            ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 701            ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 138            ;
+;     -- 5 input functions                    ; 191            ;
+;     -- 4 input functions                    ; 77             ;
+;     -- <=3 input functions                  ; 295            ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 1751           ;
+;                                             ;                ;
+; I/O pins                                    ; 16             ;
+; Total MLAB memory bits                      ; 0              ;
+; Total block memory bits                     ; 15624          ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 1177           ;
+; Total fan-out                               ; 10120          ;
+; Average fan-out                             ; 3.88           ;
++---------------------------------------------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                               ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                 ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------+
+; datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_k4h1:auto_generated|ALTSYNCRAM                                                                   ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048  ; instruction_rom.mif ;
+; datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_7jg1:auto_generated|ALTSYNCRAM                                                                           ; AUTO ; ROM              ; 8            ; 4            ; --           ; --           ; 32    ; stepper_rom.mif     ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ke84:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 106          ; 128          ; 106          ; 13568 ; None                ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Apr 11 18:53:16 2023
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off lab5 -c lab5 --merge=on
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 139 of its 245 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 106 missing sources or connections.
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Critical Warning (138067): Current license file does not support incremental compilation. The Quartus Prime software removes all the user-specified design partitions in the design automatically.
+Info (21057): Implemented 2256 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 2120 logic cells
+    Info (21064): Implemented 115 RAM segments
+Info: Quartus Prime Partition Merge was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4759 megabytes
+    Info: Processing ended: Tue Apr 11 18:53:18 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

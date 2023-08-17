@@ -1,0 +1,178 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/karee/OneDrive/Documents/GitHub/3TB4_labs/lab5/simulation/qsim
+vbranch_logic
+!s110 1681272420
+!i10b 1
+!s100 JXdUV@^C<lHGIKK7zWAQ_0
+INclYz100hzk@CCbR1d1232
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1681272418
+Z2 8lab5.vo
+Z3 Flab5.vo
+Z4 L0 31
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1681272420.000000
+Z7 !s107 lab5.vo|
+Z8 !s90 -work|work|lab5.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+vbranch_logic_vlg_vec_tst
+!s110 1681272421
+!i10b 1
+!s100 ?G2I7FWQJ;=8JifM_^ZJ@3
+IAWnDff]8O^@TLZ3Yc[?R:2
+R1
+R0
+w1681272416
+8branch_logic.vwf.vt
+Fbranch_logic.vwf.vt
+Z11 L0 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 branch_logic.vwf.vt|
+!s90 -work|work|branch_logic.vwf.vt|
+!i113 1
+R9
+R10
+vimmediate_extractor
+Z12 !s110 1681271572
+!i10b 1
+!s100 ]`19CW<^V?786Mlh0K`ZU0
+IHOTJ3`Q@[DOMo?_2T>zYS2
+R1
+R0
+w1681271570
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z13 !s108 1681271572.000000
+R7
+R8
+!i113 1
+R9
+R10
+vimmediate_extractor_vlg_vec_tst
+R12
+!i10b 1
+!s100 6ceV^4bIhLB8Wec<A2VED3
+IFLbi3i7cQL6clG;WaXEFl1
+R1
+R0
+w1681271567
+8immediate_extractor.vwf.vt
+Fimmediate_extractor.vwf.vt
+R11
+R5
+r1
+!s85 0
+31
+R13
+!s107 immediate_extractor.vwf.vt|
+!s90 -work|work|immediate_extractor.vwf.vt|
+!i113 1
+R9
+R10
+vregfile
+Z14 !s110 1681270682
+!i10b 1
+!s100 5:Sm=M8dQQSoTVAH[kT[M1
+IE[=bhSb2[YlKHWVzzY5g71
+R1
+R0
+w1681270680
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z15 !s108 1681270682.000000
+R7
+R8
+!i113 1
+R9
+R10
+vregfile_vlg_vec_tst
+R14
+!i10b 1
+!s100 o2g12K:PQ85TYP4fIREWo3
+I_6XzIW5?BQ4d1:`IJR`;T3
+R1
+R0
+w1681270678
+8regfile.vwf.vt
+Fregfile.vwf.vt
+R11
+R5
+r1
+!s85 0
+31
+R15
+!s107 regfile.vwf.vt|
+!s90 -work|work|regfile.vwf.vt|
+!i113 1
+R9
+R10
+vtemp_register
+Z16 !s110 1681269978
+!i10b 1
+!s100 mCl]2:Z2VkLeP9cz@f5G22
+IVQ1:ARRoX7CRCN6g5KWfd3
+R1
+R0
+w1681269975
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+!s108 1681269977.000000
+R7
+R8
+!i113 1
+R9
+R10
+vtemp_register_vlg_vec_tst
+R16
+!i10b 1
+!s100 SmVjXYoBHeK`YD9zlaGVD3
+IKWCK:zgbNMl@N8nfmgTV53
+R1
+R0
+w1681269973
+8temp_register.vwf.vt
+Ftemp_register.vwf.vt
+R11
+R5
+r1
+!s85 0
+31
+!s108 1681269978.000000
+!s107 temp_register.vwf.vt|
+!s90 -work|work|temp_register.vwf.vt|
+!i113 1
+R9
+R10

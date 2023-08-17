@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Wed Apr 12 01:59:43 2023
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : lab5
+Top-level Entity Name : alu
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 1637
+Total pins : 27
+Total virtual pins : 0
+Total block memory bits : 13,568
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
